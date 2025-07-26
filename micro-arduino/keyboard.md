@@ -12,11 +12,16 @@
 - Set1, set2, set3. 
 - Set1 is used by BIOS.
 
-##### USB HID Codes
+#### USB HID Codes
 - Part of the USB HID (Human Interface Device) standard. 
 - HID Usage Tables define codes for input devices (keyboards, mice, etc.).
 - Codes are abstract, and independent of OS or hardware scan code sets.
 - OS maps USB HID codes to scan codes, and scan codes to ASCII codes.
+##### HID Report Descriptor
+- Binary structure the device sends to describe its capabilities.
+- E.g.,  number of buttons, axes, etc
+##### HID Usage Tables
+-  Assigns "usage codes" to each control element
 
 #### Modifier Keys
 - Shift Key
@@ -50,6 +55,11 @@
 | 0X1D      | Ctrl        |
 | 0X38      | Alt         |
 
+
+##### Control Characters
+- Non-printing characters in character encoding systems.
+- Perform certain actions rather than representing written symbols.
+- E.g., moving cursor, signaling end-of-line, producing beeps. 
 
 
 
