@@ -1,0 +1,14 @@
+kernel's USB subsystem
+
+usbcore, uhci_hcd, ohci_hcd, ehci_hcd, xHCI, usb-storage, usbhid, cdc_acm
+
+libusb, hidapi, usbutils, PyUSB, libudev
+
+gadgetfs, configfs, libcomposite, gadgetfs
+
+libudev, udevadm, /sys
+
+
+
+
+
