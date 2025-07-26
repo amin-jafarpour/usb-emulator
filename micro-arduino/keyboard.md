@@ -30,9 +30,8 @@
 - Modifier keys are bit flags in the HID report.
 - The first byte of a USB HID keyboard report is reserved for modifier status.
 - Keyboard sends modifier status byte along with up to 6 key usage codes.
-|     |               |
-|-----|---------------|
 | Bit | Modifier Key  |
+|-----|---------------|
 | 1   | Left Ctrl     |
 | 2   | Left Shift    |
 | 3   | Left Alt      |
@@ -42,9 +41,8 @@
 | 7   | Right GUI     |
 ##### Modifiers in BIOS
 - Modifier keys have their own scan codes like any other key.
-|           |             |
-|-----------|-------------|
 | Hex Value | Key         |
+|-----------|-------------|
 | 0X2A      | Left Shift  |
 | 0X36      | Right Shift |
 | 0X1D      | Ctrl        |
