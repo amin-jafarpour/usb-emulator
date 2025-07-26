@@ -17,11 +17,40 @@
 - HID Usage Tables define codes for input devices (keyboards, mice, etc.).
 - Codes are abstract, and independent of OS or hardware scan code sets.
 - OS maps USB HID codes to scan codes, and scan codes to ASCII codes.
+- Used for keyboards, mice, jotsticks, etc.
+#### USB Classes
+- Mass Storage
+- HID
+- Audio 
+- CDC (Communications Device Class)
+#### USB HID Class
+- Allows devices to send structured input data to the host and receive output reports from it. 
+##### HID Report Descriptor
+- data structure that describes the format and meaning of data packets the device will send or receive.
+- What kind of data is available (e.g., X/Y position, button states)
+- How big each field is in bits
+##### HID Report Types
+- Input Reports: Data sent from device to host (e.g., keypresses)
+- Output Reports: Data sent from host to device (e.g., LED states)
+- Feature Reports: Bi-directional data not time-critical (e.g., device configuration)
+
+
+
+
 ##### HID Report Descriptor
 - Binary structure the device sends to describe its capabilities.
 - E.g.,  number of buttons, axes, etc
 ##### HID Usage Tables
--  Assigns "usage codes" to each control element
+-  Assigns usage page codes to each buttons.
+
+| Usage Page | Description              |
+|------------|--------------------------|
+| 0x01       | Generic Desktop Controls |
+| 0x02       | Stimulation Controls     |
+| 0x07       | Keyboard                 |
+| 0x08       | LED                      |
+| 0x09       | Button                   |
+
 
 #### Modifier Keys
 - Shift Key
